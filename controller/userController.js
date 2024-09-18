@@ -18,7 +18,7 @@ const userController = {
                 message
             })
 
-            res.status(StatusCodes.ACCEPTED).json({ msg : "Submitted your details", user: data, success : true })
+            res.status(StatusCodes.ACCEPTED).json({ msg : "Your Details Have Been Submiited, Faisal Will Contact you Asap", user: data, success : true })
         } catch (error) {
             return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({ msg : error.message, success : false })
         }
